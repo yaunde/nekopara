@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.ncu.neko.zhan</groupId>
+		<artifactId>nekopara</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<properties>
+		<jdk.version>1.8</jdk.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<artifactId>java</artifactId>
+	<packaging>pom</packaging>
+	<name>java</name>
+	<description>java测试</description>
+	<modules>
+		<module>java-algorithm</module>
+		<module>java-base-test</module>
+		<module>java-design.patterns</module>
+        <module>java-fx</module>
+		<module>java-io</module>
+    </modules>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

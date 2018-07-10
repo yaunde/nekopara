@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.ncu.neko.zhan</groupId>
+	<artifactId>nekopara</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>nekopara</name>
+	<properties>
+		<jdk.version>1.8</jdk.version>
+		<mybatis-plus.version>2.1.8</mybatis-plus.version>
+		<druid.version>1.1.6</druid.version>
+		<mybaitsplus.version>2.1.8</mybaitsplus.version>
+		<mysql.version>5.1.38</mysql.version>
+		<aspectjweaver.version>1.8.8</aspectjweaver.version>
+		<fileupload.version>1.3.1</fileupload.version>
+		<jstl.version>1.2</jstl.version>
+		<jdk.version>1.8</jdk.version>
+		<slf4j.version>1.7.5</slf4j.version>
+		<logback.version>1.0.13</logback.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>5.0.0.RELEASE</spring.version>
+		<junit.version>4.12</junit.version>
+		<fastjson.version>1.2.8</fastjson.version>
+		<log4j.version>1.2.17</log4j.version>
+		<slf4j.version>1.7.19</slf4j.version>
+		<joda-time.version>2.5</joda-time.version>
+	</properties>
+	<modules>
+		<module>blogsos-utils</module>
+		<module>blogsos-sso</module>
+		<!-- <module>mb-generator</module> -->
+		<!-- <module>mp-generator</module> -->
+		<module>java</module>
+		<module>sso</module>
+        <module>spring</module>
+    </modules>
+	<!--<build>-->
+		<!--<plugins>-->
+			<!--<plugin>-->
+				<!--<groupId>org.apache.maven.plugins</groupId>-->
+				<!--<artifactId>maven-compiler-plugin</artifactId>-->
+				<!--<configuration>-->
+					<!--<source>${jdk.version}</source>-->
+					<!--<target>${jdk.version}</target>-->
+				<!--</configuration>-->
+			<!--</plugin>-->
+		<!--</plugins>-->
+	<!--</build>-->
+</project>

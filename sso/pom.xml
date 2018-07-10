@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.ncu.neko.zhan</groupId>
+    <artifactId>nekopara</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>sso</artifactId>
+  <packaging>pom</packaging>
+  <properties>
+  	<cas.version>5.0.10</cas.version>
+	<jdk.version>1.8</jdk.version>
+  </properties>
+  <modules>
+  	<module>nekopara-sso</module>
+  	<module>nekopara-sso-server</module>
+  	<module>cas-sso-server5.x</module>
+  	<module>cas-sso-client</module>
+  </modules>
+  
+  <dependencies></dependencies>
+  <dependencyManagement>
+     <dependencies>
+     
+        <!-- Override a dependency by including it BEFORE the BOM -->
+        <!-- <dependency>
+            <groupId>org.group</groupId>
+            <artifactId>artifact-name</artifactId>
+            <version>X.Y.Z</version>
+        </dependency> -->
+             
+        <!-- <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-bom</artifactId>
+            <version>${cas.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency> -->
+    </dependencies>
+</dependencyManagement>
+<build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<configuration>
+				<source>${jdk.version}</source>
+				<target>${jdk.version}</target>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>
+</project>
