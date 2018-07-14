@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.blotus.mapper.ILtCommentsDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="io.blotus.model.entity.LtComments">
+        <id column="comment_ID" property="commentId" />
+        <result column="comment_post_ID" property="commentPostId" />
+        <result column="comment_author" property="commentAuthor" />
+        <result column="comment_author_email" property="commentAuthorEmail" />
+        <result column="comment_author_url" property="commentAuthorUrl" />
+        <result column="comment_author_IP" property="commentAuthorIp" />
+        <result column="comment_date" property="commentDate" />
+        <result column="comment_date_gmt" property="commentDateGmt" />
+        <result column="comment_content" property="commentContent" />
+        <result column="comment_karma" property="commentKarma" />
+        <result column="comment_approved" property="commentApproved" />
+        <result column="comment_agent" property="commentAgent" />
+        <result column="comment_type" property="commentType" />
+        <result column="comment_parent" property="commentParent" />
+        <result column="user_id" property="userId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        comment_ID AS commentId, comment_post_ID AS commentPostId, comment_author AS commentAuthor, comment_author_email AS commentAuthorEmail, comment_author_url AS commentAuthorUrl, comment_author_IP AS commentAuthorIp, comment_date AS commentDate, comment_date_gmt AS commentDateGmt, comment_content AS commentContent, comment_karma AS commentKarma, comment_approved AS commentApproved, comment_agent AS commentAgent, comment_type AS commentType, comment_parent AS commentParent, user_id AS userId
+    </sql>
+
+</mapper>

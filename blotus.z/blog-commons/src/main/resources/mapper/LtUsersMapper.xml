@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.blotus.mapper.ILtUsersDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="io.blotus.model.entity.LtUsers">
+        <id column="ID" property="id" />
+        <result column="user_login" property="userLogin" />
+        <result column="user_pass" property="userPass" />
+        <result column="user_nicename" property="userNicename" />
+        <result column="user_email" property="userEmail" />
+        <result column="user_url" property="userUrl" />
+        <result column="user_registered" property="userRegistered" />
+        <result column="user_activation_key" property="userActivationKey" />
+        <result column="user_status" property="userStatus" />
+        <result column="display_name" property="displayName" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID AS id, user_login AS userLogin, user_pass AS userPass, user_nicename AS userNicename, user_email AS userEmail, user_url AS userUrl, user_registered AS userRegistered, user_activation_key AS userActivationKey, user_status AS userStatus, display_name AS displayName
+    </sql>
+    
+    <select id="selectByEmail" resultMap="BaseResultMap" parameterType="java.lang.String">
+		select *
+		<!-- <include refid="Base_Column_List" /> -->
+		from lt_users
+		where user_email = #{0}
+	</select>
+
+</mapper>

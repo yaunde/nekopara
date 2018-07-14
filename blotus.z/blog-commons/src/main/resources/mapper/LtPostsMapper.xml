@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.blotus.mapper.ILtPostsDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="io.blotus.model.entity.LtPosts">
+        <id column="ID" property="id" />
+        <result column="post_author" property="postAuthor" />
+        <result column="post_date" property="postDate" />
+        <result column="post_date_gmt" property="postDateGmt" />
+        <result column="post_content" property="postContent" />
+        <result column="post_title" property="postTitle" />
+        <result column="post_excerpt" property="postExcerpt" />
+        <result column="post_status" property="postStatus" />
+        <result column="comment_status" property="commentStatus" />
+        <result column="ping_status" property="pingStatus" />
+        <result column="post_password" property="postPassword" />
+        <result column="post_name" property="postName" />
+        <result column="to_ping" property="toPing" />
+        <result column="pinged" property="pinged" />
+        <result column="post_modified" property="postModified" />
+        <result column="post_modified_gmt" property="postModifiedGmt" />
+        <result column="post_content_filtered" property="postContentFiltered" />
+        <result column="post_parent" property="postParent" />
+        <result column="guid" property="guid" />
+        <result column="menu_order" property="menuOrder" />
+        <result column="post_type" property="postType" />
+        <result column="post_mime_type" property="postMimeType" />
+        <result column="comment_count" property="commentCount" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID AS id, post_author AS postAuthor, post_date AS postDate, post_date_gmt AS postDateGmt, post_content AS postContent, post_title AS postTitle, post_excerpt AS postExcerpt, post_status AS postStatus, comment_status AS commentStatus, ping_status AS pingStatus, post_password AS postPassword, post_name AS postName, to_ping AS toPing, pinged, post_modified AS postModified, post_modified_gmt AS postModifiedGmt, post_content_filtered AS postContentFiltered, post_parent AS postParent, guid, menu_order AS menuOrder, post_type AS postType, post_mime_type AS postMimeType, comment_count AS commentCount
+    </sql>
+
+</mapper>

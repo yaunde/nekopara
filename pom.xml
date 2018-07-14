@@ -31,6 +31,7 @@
 		<module>blogsos-sso</module>
 		<!-- <module>mb-generator</module> -->
 		<!-- <module>mp-generator</module> -->
+		<module>blotus.z</module>
 		<module>java</module>
 		<module>sso</module>
         <module>spring</module>
